@@ -1,0 +1,17 @@
+maintenance:
+  enabled: false
+  motd: "               &4&lMaintenance Mode\n      &lPlease try again later."
+  kick-message: "&cThe server is currently in maintenance mode."
+  bypass-permission: "proxyflow.maintenance.bypass"
+security:
+  vpn-check:
+    enabled: true
+    api-key: "YOUR_API_KEY_HERE"
+    bypass-permission: "proxyflow.security.vpn.bypass"
+  country-block:
+    enabled: false
+    mode: "blacklist"
+    countries:
+      - "US"
+      - "CN"
+      - "RU"

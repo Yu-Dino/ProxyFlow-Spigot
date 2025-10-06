@@ -1,0 +1,31 @@
+name: ProxyFlowSpigot
+version: ${project.version}
+main: net.yuflow.proxyflow.ProxyFlowSpigot
+api-version: '1.20'
+authors: [Yu_Dino]
+description: A security plugin for your Spigot server!
+
+commands:
+  maintenance:
+    description: Toggles maintenance mode.
+    usage: /<command>
+    permission: proxyflow.command.maintenance
+  proxyflow:
+    description: Main command for ProxyFlow.
+    usage: /<command> [reload]
+    aliases: [pf]
+    permission: proxyflow.command.reload
+
+permissions:
+  proxyflow.command.maintenance:
+    description: Allows toggling maintenance mode.
+    default: op
+  proxyflow.command.reload:
+    description: Allows reloading the configuration.
+    default: op
+  proxyflow.maintenance.bypass:
+    description: Allows joining the server during maintenance.
+    default: op
+  proxyflow.security.vpn.bypass:
+    description: Allows joining with a detected VPN/Proxy IP.
+    default: op
